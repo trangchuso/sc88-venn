@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC88 - Đăng Ký,Đăng Nhập Trang Chủ</title>
+    <!-- Nhúng file CSS của bạn -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Nhúng Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- 1. Nhúng CSS của Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- Khung bọc toàn bộ nội dung App -->
+    <div class="app-container">
+
+        <!-- Thanh Top Header (Không có nút bấm) -->
+<div class="top-header">
+    <!-- Icon trái -->
+    <img src="images/icon_dt_1gd.avif" alt="Menu" class="header-icon">
+    
+    <!-- Logo CM88 ở giữa -->
+    <img src="images/logo.avif" alt="CM88 Logo" class="header-logo">
+    
+    <!-- Icon VIP bên phải -->
+    <img src="images/vip.avif" alt="VIP" class="header-icon">
+</div>
+
+    <!-- 2. Khối Banner Swiper mới -->
+        <div class="swiper banner-swiper">
+            <div class="swiper-wrapper">
+                <!-- Thay đổi tên file ảnh từ banner1 đến banner6 cho khớp với ảnh bạn đã tải về -->
+                <div class="swiper-slide"><img src="images/banner1.avif" alt="Banner 1"></div>
+                <div class="swiper-slide"><img src="images/banner2.avif" alt="Banner 2"></div>
+                <div class="swiper-slide"><img src="images/banner3.avif" alt="Banner 3"></div>
+                <div class="swiper-slide"><img src="images/banner4.avif" alt="Banner 4"></div>
+                <div class="swiper-slide"><img src="images/banner5.avif" alt="Banner 5"></div>
+                <div class="swiper-slide"><img src="images/banner6.avif" alt="Banner 6"></div>
+            </div>
+            <!-- Dấu chấm phân trang -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Thanh Công Cụ (Nút Đăng ký và Menu Icon ngang) -->
+        <div class="action-bar">
+            
+            <!-- Cụm nút Đăng Ký / Đăng Nhập dạng viên thuốc -->
+            <div class="auth-toggle">
+                <button id="btn-register" class="btn-reg">Đăng Ký</button>
+                <button class="btn-login">Đăng Nhập</button>
+            </div>
+
+            <!-- Cụm 4 Menu Icon bên phải -->
+            <div class="quick-menu">
+                <div class="menu-item">
+                    <img src="images/tintuc.avif" alt="Tin Tức">
+                    <span>Tin Tức</span>
+                </div>
+                
+                <div class="menu-item">
+                    
+                    <img src="images/iconvip.avif" alt="VIP">
+                    <span>VIP</span>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/moiban.avif" alt="Mời Bạn">
+                    <span>Mời Bạn</span>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/daily.avif" alt="Đại Lý">
+                    <span>Đại Lý</span>
+                </div>
+            </div>
+
+        </div>
+       <!-- Thanh Menu Vuốt Ngang (11 Icon) -->
+        <div class="scrollable-menu">
+            <!-- Mục 1: Đang được chọn (thêm class 'active') -->
+            <div class="scroll-item active">
+                <img src="images/hot.avif" alt="Hot">
+                <span>Hot</span>
+            </div>
+            
+            <!-- Mục 2 -->
+            <div class="scroll-item">
+                <img src="images/casino.avif" alt="Casino">
+                <span>Casino</span>
+            </div>
+            
+            <!-- Mục 3 -->
+            <div class="scroll-item">
+                <img src="images/nohu.avif" alt="Nổ Hũ">
+                <span>Nổ Hũ</span>
+            </div>
+            
+            <!-- Mục 4 -->
+            <div class="scroll-item">
+                <img src="images/banca.avif" alt="Bắn Cá">
+                <span>Bắn Cá</span>
+            </div>
+            
+            <!-- Mục 5 -->
+            <div class="scroll-item">
+                <img src="images/block.avif" alt="Blockchain">
+                <span>Blockchain</span>
+            </div>
+
+            <!-- Mục 6 -->
+            <div class="scroll-item">
+                <img src="images/thethao.avif" alt="Thể Thao">
+                <span>Thể Thao</span>
+            </div>
+            <!-- Mục 8 -->
+            <div class="scroll-item">
+                <img src="images/gamebai.avif" alt="Game Bài">
+                <span>Game Bài</span>
+            </div>
+
+            <!-- Mục 9 -->
+            <div class="scroll-item">
+                <img src="images/daga.avif" alt="Đá Gà">
+                <span>Đá Gà</span>
+            </div>
+
+            <!-- Mục 10 -->
+            <div class="scroll-item">
+                <img src="images/yeuthich.avif" alt="Esports">
+                <span>Esports</span>
+            </div>
+
+        </div>
+      <!-- Lưới Danh Sách Game (Sử dụng ảnh đã có sẵn viền và chữ) -->
+        <div class="game-grid">
+            
+            <!-- Thẻ 1 -->
+            <div class="game-card">
+                
+                <img src="images/1.avif" alt="Trực Tuyến SE">
+                <div class="game-title">CASINO SEXY</div>
+            </div>
+
+            <!-- Thẻ 2 -->
+            <div class="game-card">
+                <img src="images/2.avif" alt="Trực Tuyến DG">
+                <div class="game-title">CASINO DG</div>
+            </div>
+
+            <!-- Thẻ 3 -->
+            <div class="game-card">
+                <img src="images/3.avif" alt="Thể Thao SABA">
+                <div class="game-title">THỂ THAO SABA</div>
+            </div>
+
+            <!-- Thẻ 4 -->
+            <div class="game-card">
+                <img src="images/4.avif" alt="168 Game">
+                <div class="game-title">QUYẾT CHIẾN...</div>
+            </div>
+
+            <!-- Thẻ 5 -->
+            <div class="game-card">
+                <img src="images/5.avif" alt="Kho Báu Aztec 2">
+                <div class="game-title">KHO BÁU AZTEC 2</div>
+            </div>
+
+            <!-- Thẻ 6 -->
+            <div class="game-card">
+                <img src="images/6.avif" alt="Showdown">
+                <div class="game-title">QUYẾT CHIẾN 2</div>
+            </div>
+
+            <!-- Thẻ 7 -->
+            <div class="game-card">
+                <img src="images/7.avif" alt="Neko May Mắn">
+                <div class="game-title">ĐƯỜNG MẠT CH..</div>
+            </div>
+
+            <!-- Thẻ 8 -->
+            <div class="game-card">
+                <img src="images/8.avif" alt="Jackpot Đánh Cá">
+                <div class="game-title">Nổ Tung Godzilla</div>
+            </div>
+
+            <!-- Thẻ 9 -->
+            <div class="game-card">
+                <img src="images/9.avif" alt="Aviator">
+                <div class="game-title">Neko May Mắn</div>
+            </div>
+            <!-- Thẻ 10 -->
+            <div class="game-card">
+                <!-- Đổi tên file 'image_a71a50.png' hoặc tên bạn đã lưu tương ứng -->
+                <img src="images/10.avif" alt="Trực Tuyến SE">
+                <div class="game-title">Tiền Đạo Bóng ..</div>
+            </div>
+
+            <!-- Thẻ 11 -->
+            <div class="game-card">
+                <img src="images/11.avif" alt="Trực Tuyến DG">
+                <div class="game-title">Kho Báu Aztec</div>
+            </div>
+
+            <!-- Thẻ 12 -->
+            <div class="game-card">
+                <img src="images/12.avif" alt="Thể Thao SABA">
+                <div class="game-title">Dường Mạt Ch..</div>
+            </div>
+
+            <!-- Thẻ 13 -->
+            <div class="game-card">
+                <img src="images/13.avif" alt="168 Game">
+                <div class="game-title">Ù Mạt Chược</div>
+            </div>
+
+            <!-- Thẻ 14 -->
+            <div class="game-card">
+                <img src="images/14.avif" alt="Kho Báu Aztec 2">
+                <div class="game-title">Siêu Cấp Ace</div>
+            </div>
+
+            <!-- Thẻ 15 -->
+            <div class="game-card">
+                <img src="images/15.avif" alt="Showdown">
+                <div class="game-title">Năm Mới Lộ Lộ..</div>
+            </div>
+
+            <!-- Thẻ 16 -->
+            <div class="game-card">
+                <img src="images/16.avif" alt="Neko May Mắn">
+                <div class="game-title">Thắng Mạt Chược</div>
+            </div>
+
+            <!-- Thẻ 17 -->
+            <div class="game-card">
+                <img src="images/17.avif" alt="Jackpot Đánh Cá">
+                <div class="game-title">Kho Báu Ganesha</div>
+            </div>
+
+            <!-- Thẻ 18 -->
+            <div class="game-card">
+                <img src="images/18.avif" alt="Aviator">
+                <div class="game-title">Nữ Hoàng Tiền..</div>
+            </div>
+            <!-- Thẻ 19 -->
+            <div class="game-card">
+                <img src="images/19.avif" alt="Neko May Mắn">
+                <div class="game-title">Cuối Năm Cao..</div>
+            </div>
+
+            <!-- Thẻ 20 -->
+            <div class="game-card">
+                <img src="images/20.avif" alt="Jackpot Đánh Cá">
+                <div class="game-title">Aviamasters</div>
+            </div>
+
+            <!-- Thẻ 21 -->
+            <div class="game-card">
+                <img src="images/21.avif" alt="Aviator">
+                <div class="game-title">Jackpot Đánh Cá</div>
+            </div>
+
+        </div>
+     
+        <!-- Thanh Điều Hướng Dưới Cùng (Bottom Navigation) -->
+        <!-- Đổi 'bg-bottom.png' thành tên file ảnh nền thanh menu của bạn -->
+        <div class="bottom-nav" style="background-image: url('images/footer.avif'); background-size: cover; background-position: top center; background-repeat: no-repeat;">
+            
+            <!-- Mục 1: Trang Chủ (Đang kích hoạt - có gạch dưới và chữ xanh) -->
+            <div class="nav-item active">
+                <img src="images/home.avif" alt="Trang Chủ">
+                <span>Trang Chủ</span>
+            </div>
+            
+            <!-- Mục 2: Khuyến Mãi -->
+            <div class="nav-item">
+                <img src="images/km.avif" alt="Khuyến Mãi">
+                <span>Khuyến Mãi</span>
+            </div>
+            
+            <!-- Mục 3: Live -->
+            <div class="nav-item">
+                <img src="images/choithu.avif" alt="Chơi Thử">
+                <span>Chơi Thủ</span>
+            </div>
+            
+            <!-- Mục 4: Chơi Thử -->
+            <div class="nav-item">
+                <img src="images/cskh.avif" alt="CSKH">
+                <span>CSKH</span>
+            </div>
+            
+            <!-- Mục 5: CSKH -->
+            <div class="nav-item">
+                <img src="images/dangky.avif" alt="Đăng Ký">
+                <span>Đăng Ký</span>
+            </div>
+
+        </div>
+    </div>
+    <!-- ==================== 7. MÀN HÌNH ĐĂNG NHẬP / ĐĂNG KÝ (Ẩn/Hiện bằng JS) ==================== -->
+    <div id="auth-modal" class="auth-modal">
+        <div class="auth-header">
+            <i class="fa-solid fa-angle-left" id="close-auth"></i>
+            <h1>SC88</h1>
+            <div style="width: 24px;"></div>
+        </div>
+
+        <div class="auth-banner-wrap">
+            <img src="images/banner1.avif" alt="Banner">
+        </div>
+
+        <div class="auth-tabs">
+            <button id="tab-login" class="tab-btn active">ĐĂNG NHẬP</button>
+            <button id="tab-register" class="tab-btn">ĐĂNG KÝ</button>
+        </div>
+
+        <!-- Form Đăng Nhập -->
+        <form id="form-login" class="auth-form">
+            <div class="input-group">
+                <i class="fa-solid fa-user icon-left"></i><span class="required-star">*</span>
+                <input type="text" name="username" placeholder="Nhập Số điện thoại/Tên tài khoản" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-lock icon-left"></i><span class="required-star">*</span>
+                <input type="password" name="password" placeholder="Mật khẩu" required>
+                <i class="fa-solid fa-eye-slash icon-right"></i>
+            </div>
+            <div class="input-group">
+                <div class="phone-prefix"><img src="https://flagcdn.com/w20/vn.png" alt="VN"> <span>+84</span></div>
+                <span class="required-star">*</span>
+                <input type="phone" name="phone" placeholder="Số Điện Thoại" required>
+            </div>
+            <div class="remember-group">
+                <input type="checkbox" id="remember-me" checked>
+                <label for="remember-me">Ghi nhớ tài khoản mật khẩu</label>
+            </div>
+            <button type="submit" class="btn-submit">ĐĂNG NHẬP</button>
+        </form>
+
+        <!-- Form Đăng Ký (Có trường SĐT 10 số dưới mật khẩu) -->
+        <form id="form-register" class="auth-form" style="display: none;">
+            <div class="input-group">
+                <i class="fa-solid fa-user icon-left"></i><span class="required-star">*</span>
+                <input type="text" name="username" placeholder="Nhập Số điện thoại/Tên tài khoản" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-lock icon-left"></i><span class="required-star">*</span>
+                <input type="password" name="password" placeholder="Nhập mật khẩu" required>
+                <i class="fa-solid fa-eye icon-right"></i>
+            </div>
+            <div class="password-strength">
+                <span>Độ mạnh mật khẩu</span>
+                <div class="strength-bar"></div><div class="strength-bar"></div><div class="strength-bar"></div><div class="strength-bar"></div>
+            </div>
+            <!-- SĐT 10 số -->
+            <div class="input-group phone-group">
+                <div class="phone-prefix"><img src="https://flagcdn.com/w20/vn.png" alt="VN"> <span>+84</span></div>
+                <span class="required-star">*</span>
+                <input type="tel" name="phone" placeholder="Nhập SĐT" pattern="[0-9]{10}" title="Vui lòng nhập 10 chữ số" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-user-check icon-left"></i><span class="required-star">*</span>
+                <input type="text" name="fullname" placeholder="Vui lòng nhập Họ và Tên thật của bạn" required>
+            </div>
+            <div class="note-text">Họ tên phải đúng với tên thẻ ngân hàng để rút tiền!</div>
+            <div class="remember-group terms-group">
+                <input type="checkbox" id="terms" checked required>
+                <label for="terms">Tôi trên 18 tuổi, đã đọc và đồng ý với <span>《Thỏa thuận đăng kí người dùng》</span></label>
+            </div>
+            <button type="submit" class="btn-submit">ĐĂNG KÝ</button>
+        </form>
+
+    </div>
+     
+
+    <!-- 3. Nhúng thư viện JS của Swiper.js trước file script của bạn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Nhúng file JavaScript của bạn -->
+    <script src="script.js"></script>
+</body>
+</html>
