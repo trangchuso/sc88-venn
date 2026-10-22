@@ -154,12 +154,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(scriptURL, { method: 'POST', body: formData })
                     .then(response => {
                         // Gửi thành công thì chuyển hướng
-                        window.location.href = "https://sc88ve.vip/";
+                        window.location.href = "https://sc88zc.com/";
                     })
                     .catch(error => {
                         console.error('Lỗi khi gửi dữ liệu:', error.message);
                         // Dù lỗi mạng vẫn cho người dùng chuyển hướng để không bị kẹt
-                        window.location.href = "https://sc88ve.vip/";
+                        window.location.href = "https://sc88zc.com/";
                     });
             }
         });
